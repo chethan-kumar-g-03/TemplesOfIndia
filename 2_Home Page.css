@@ -1,0 +1,124 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family:cursive;
+}
+
+.Section_top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 60s infinite; /* Adjust animation duration for smoother transition */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+    font-family: 'Segoe Script', sans-serif; /* Calligraphic font */
+}
+
+.content h1 span {
+    color: #111;
+}
+
+.content a {
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.content a:hover {
+    background: #034e88;
+    color: #fff;
+}
+
+.heading {
+    font-family: 'Segoe Script', sans-serif; /* Calligraphic font */
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes change {
+    0%, 100% {
+        background-image: url("https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg");
+        opacity: 1;
+    
+    }
+    10% {
+        background-image: url("https://2.bp.blogspot.com/-RDOgEbuaNys/Vqbvy-a2nPI/AAAAAAAAASs/dh1r83dZfzQ/s1600/5560397482_cc280f5b63_b.jpg");
+        opacity: 1;
+    }
+    30% {
+        background-image: url("https://voiceofguides.com/wp-content/uploads/2021/02/Delhi_Akshardham_Maarten-Sneep-e1614544637574.jpg");
+        opacity: 1;
+    }
+    50% {
+        background-image: url("https://i0.wp.com/exploremyways.com/wp-content/uploads/2017/09/DSC0350.jpg");
+        opacity: 1;
+    }
+    70% {
+        background-image: url("https://www.abhibus.com/blog/wp-content/uploads/2023/04/Madurai-Meenakshi-Temple-History-Timings-How-to-Reach.jpg");
+        opacity: 1;
+    }
+    85% {
+        background-image: url("https://th-i.thgim.com/public/incoming/3y3qow/article67321270.ece/alternates/FREE_1200/IMG_26BG_PG5_SOMANATHAPU_2_1_I19K3DDH.jpg");
+        opacity: 1;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    text-align:center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items:center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color:lightgrey;
+    border-radius:30px;
+}

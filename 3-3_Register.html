@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<style>
+body {
+position: relative; /* Required for the ::before pseudo-element */
+background-image: url('https://www.tourmyindia.com/socialimg/hoysala-temples-tour.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+body::before {
+content: "";
+background: rgba(255, 255, 255, 0.5); /* Adjust the last value (0.5) for opacity */
+position: static;
+top:0;
+left:0;
+width: 100%;
+height: 100%; 
+z-index: -1; /* Place the overlay behind the content */
+opacity: 0.0;
+
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+background-color: #f4f4f4;
+}
+h1 {
+text-align: center;
+color:#ffff;
+font-size:100px;
+background-color:#87ceeb;
+margin-top:50px;
+}
+form {
+width: 50%;
+margin: 0 auto;
+background-color: #fff;
+padding: 40px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+label {
+display: block;
+margin-bottom: 10px;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="password"] select {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+input[type="submit"] {
+background-color: #007bff;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+h4{
+color:#000000;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    text-align:center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items:center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color:lightgrey;
+    border-radius:30px;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><b><a href="2_Home Page.html">Home</a></li></b>
+            <li><b><a href="3-1_Explore.html">Explore</a></li></b>
+            <li><b><a href="3-3_Register.html">Register</a></li></b>
+            <li><b><a href="3-4_Map.html">Maps</a></li></b>
+            <li style="text-align:right;"><b><a href="3-5_Login.html">Login</a>
+        </ul>
+    </nav>
+<h1>Registration Form </h1>
+<form action="3-3_Register.php" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="password1">Password:</label>
+<input type="password" id="password1" name="password1" required>
+<label for="phone">Phone NO:</label>
+<input type="text" id="phone" name="phone" size="10" required>
+<label for="adhaar">Adhaar:</label>
+<input type="text" id="adhaar" name="adhaar" size="12" required>
+<label for="address1">Address:</label>
+<input type="text" id="address1" name="address1" required>
+<br>
+<label for="temples">Temples</label>
+<select id="temples" name="temples">
+<option value="Badrinath">Badrinath(Himachal Pradesh) </option>
+<option value="Sun Temple">Konark Sun Temple(Odisha)</option>
+<option value="Brihadeshwara">Brihadeshwara(Tamil Nadu)</option>
+<option value="Golden Temple">Golden Temple(Punjab)</option>
+<option value="Tirumala Balaji Temple">Tirumala Balaji Temple(Andhra Pradesh)</option>
+<option value="Virupaksha Temple">Virupaksha Temple(Karnataka)</option>
+<option value="Ranganathaswamy">Ranganathaswamy Temple(Tamil Nadu)</option>
+</select>
+<label for="Person No">Number of persons</label>
+<select id="persons" name="persons">
+<option value="one">1 </option>
+<option value="two">2</option>
+<option value="three">3</option>
+<option value="four">4</option>
+<option value="five">5</option>
+<option value="six">6</option>
+<option value="seven">7</option>
+</select>
+<label for="package"> SelectPackage</label>
+<select id="package" name="package">
+<option value="Sapta">Sapta 7(7 temples in 7 days) </option>
+<option value="Yatra14">Yatra 14 (visit of top 35 temple India)</option>
+<option value="Thirtha">Thirtha Yatra(only for senior citizens)</option>
+<option value="all temples">One India 2 Month's trip to all temples of India</option>
+</select>
+<label for="payment">Mode of Payment</label>
+<select id="payment" name="payment">
+<option></option>
+<option value="online"> Online</option>
+<option value="cash">Cash Payment </option>
+</select>
+<br>
+<br>
+<input type="submit" value="Register">
+<h4><em>Note:</em></h4>
+<h4><em>Once you register the package amount is sent to your email id.</em> </h4>
+<h4><em>The package can be cancelled though your mobile or using our
+website.</em></h4>
+<h4><em>The amount the can be payed online or offline.</em></h4>
+</form></body>
+</html>

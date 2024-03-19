@@ -1,0 +1,181 @@
+.heading {
+    font-size: 40px; /* Initial font size */
+    transition: font-size 0.5s ease; /* Smooth transition effect */
+}
+
+.heading:hover {
+    font-size: 50px; /* Zoomed font size on hover */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.Section_top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 60s infinite; /* Adjust animation duration for smoother transition */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+    font-family: 'Segoe Script', sans-serif; /* Calligraphic font */
+}
+
+.content h1 span {
+    color: #111;
+}
+
+.content a {
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.content a:hover {
+    background: #034e88;
+    color: #fff;
+}
+
+.heading {
+    font-family: 'Segoe Script', sans-serif; /* Calligraphic font */
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999; /* Ensure menu button stays on top */
+    color:white;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+@keyframes change {
+    0%, 100% {
+        background-image: url("https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg");
+        opacity: 1;
+    
+    }
+    10% {
+        background-image: url("https://2.bp.blogspot.com/-RDOgEbuaNys/Vqbvy-a2nPI/AAAAAAAAASs/dh1r83dZfzQ/s1600/5560397482_cc280f5b63_b.jpg");
+        opacity: 1;
+    }
+    30% {
+        background-image: url("https://voiceofguides.com/wp-content/uploads/2021/02/Delhi_Akshardham_Maarten-Sneep-e1614544637574.jpg");
+        opacity: 1;
+    }
+    50% {
+        background-image: url("https://i0.wp.com/exploremyways.com/wp-content/uploads/2017/09/DSC0350.jpg");
+        opacity: 1;
+    }
+    70% {
+        background-image: url("https://www.abhibus.com/blog/wp-content/uploads/2023/04/Madurai-Meenakshi-Temple-History-Timings-How-to-Reach.jpg");
+        opacity: 1;
+    }
+    85% {
+        background-image: url("https://th-i.thgim.com/public/incoming/3y3qow/article67321270.ece/alternates/FREE_1200/IMG_26BG_PG5_SOMANATHAPU_2_1_I19K3DDH.jpg");
+        opacity: 1;
+    }
+}
+
+/* Sidepanel styles */
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg");
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 100px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right:20px;
+    font-size:30px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color:black;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    left:10px;
+}
+
+.openbtn:hover {
+    background-color:white;
+}
+/* In your CSS file or within a <style> tag in your HTML */
+
+.welcome-link {
+    color: red; /* Change this to the desired color */
+}
